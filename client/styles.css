@@ -1,0 +1,20 @@
+body { font-family: Arial, sans-serif; background: #f3f4f6; padding: 24px; }
+.card { max-width: 520px; margin: 0 auto; background: white; padding: 20px; border-radius: 12px; }
+section { margin: 16px 0; }
+input { width: 100%; padding: 10px; margin: 6px 0; }
+button { padding: 10px 14px; cursor: pointer; }
+pre { background: #111827; color: #e5e7eb; padding: 12px; border-radius: 10px; overflow: auto; }
+
+.row { display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+.panel { margin: 16px 0; padding: 14px; border: 1px solid #e5e7eb; border-radius: 12px; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.list { display: grid; gap: 10px; margin-top: 10px; }
+.item { display: flex; gap: 12px; align-items: center; justify-content: space-between; border: 1px solid #e5e7eb; padding: 12px; border-radius: 12px; }
+.itemTitle { font-weight: 700; }
+.itemSub { font-size: 13px; color: #6b7280; margin-top: 4px; }
+.itemActions { display: flex; gap: 8px; }
+.secondary { background: #f3f4f6; border: 1px solid #e5e7eb; }
+.hint { font-size: 12px; color: #6b7280; }
+.empty { color: #6b7280; }
+button { border: 0; border-radius: 10px; background: #111827; color: #fff; }
+button.secondary { color: #111827; background: #f3f4f6; }

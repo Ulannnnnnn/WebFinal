@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card">
+    <header class="row">
+      <h1>Weather App</h1>
+      <button id="btnLogout" class="secondary">Logout</button>
+    </header>
+
+    <section class="panel">
+      <h2>Profile</h2>
+      <button id="btnProfile">Load Profile</button>
+      <pre id="profileOut"></pre>
+    </section>
+
+    <section class="panel">
+      <h2>Add Favorite City</h2>
+      <div class="grid">
+        <input id="favLabel" placeholder="Label (e.g., Home, School)" />
+        <input id="favCity" placeholder="City name (e.g., Almaty)" />
+        <input id="favLat" placeholder="Latitude (e.g., 43.2383)" />
+        <input id="favLon" placeholder="Longitude (e.g., 76.9455)" />
+      </div>
+      <div class="row">
+        <button id="btnAddFav">Add to Favorites</button>
+        <button id="btnReloadFav" class="secondary">Reload</button>
+      </div>
+      <p id="msg"></p>
+    </section>
+
+    <section class="panel">
+      <h2>Your Favorites</h2>
+      <div id="favoritesList" class="list"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Forecast</h2>
+      <p class="hint">Select a favorite and click “Forecast”.</p>
+      <pre id="forecastOut"></pre>
+    </section>
+
+    <footer class="hint">
+      API health: <a href="/health" target="_blank">/health</a>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

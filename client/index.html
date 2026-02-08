@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Weather App - Auth</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Weather App</h1>
+
+    <!-- REGISTER FORM -->
+    <form id="registerForm" autocomplete="off">
+      <h2>Register</h2>
+
+      <input id="r_username" name="register_username" placeholder="username" autocomplete="username" />
+      <input id="r_email" name="register_email" placeholder="email" type="email" autocomplete="off" />
+      <input id="r_password" name="register_password" placeholder="password" type="password" autocomplete="new-password" />
+
+      <button id="btnRegister" type="submit">Register</button>
+    </form>
+
+    <!-- LOGIN FORM -->
+    <form id="loginForm" autocomplete="on">
+      <h2>Login</h2>
+
+      <input id="l_email" name="login_email" placeholder="email" type="email" autocomplete="email" />
+      <input id="l_password" name="login_password" placeholder="password" type="password" autocomplete="current-password" />
+
+      <button id="btnLogin" type="submit">Login</button>
+    </form>
+
+    <p id="msg"></p>
+    <a href="/app.html">Go to App</a>
+  </main>
+
+  <script src="auth.js"></script>
+</body>
+</html>
